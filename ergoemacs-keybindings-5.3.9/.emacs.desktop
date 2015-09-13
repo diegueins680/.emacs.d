@@ -1,0 +1,107 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Jul 18 12:18:26 2013
+;; Desktop file format version 206
+;; Emacs version 24.3.1
+
+;; Global section:
+(setq frame-restore-params '(0 22 187 62 nil))
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("deskt"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  nil
+  "~ (Sunrise)"
+  'sr-mode
+  '(yas-minor-mode helm-mode ergoemacs-mode linum-mode dired-omit-mode)
+  1819
+  '(nil nil)
+  t
+  '((dirs "/Users/dsaa-temp/") (left . t))
+  '((truncate-lines)))
+
+(desktop-create-buffer 206
+  nil
+  "gtl-customerservicewebsite<2>"
+  'dired-mode
+  '(yas-minor-mode helm-mode ergoemacs-mode linum-mode)
+  501
+  '(698 nil)
+  t
+  '("/gtl-customerservicewebsite/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "/"
+  'dired-mode
+  '(yas-minor-mode helm-mode ergoemacs-mode linum-mode)
+  1925
+  '(948 nil)
+  t
+  '("/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "Users"
+  'dired-mode
+  '(yas-minor-mode helm-mode ergoemacs-mode linum-mode)
+  501
+  '(nil nil)
+  t
+  '("/Users/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "~"
+  'dired-mode
+  '(yas-minor-mode helm-mode ergoemacs-mode linum-mode)
+  335
+  '(589 nil)
+  t
+  '("/Users/dsaa-temp/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  ".emacs.d"
+  'dired-mode
+  '(yas-minor-mode helm-mode ergoemacs-mode linum-mode dired-omit-mode)
+  135
+  '(nil nil)
+  t
+  '("/Users/dsaa-temp/.emacs.d/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "php-auto-yasnippets"
+  'dired-mode
+  '(yas-minor-mode helm-mode ergoemacs-mode linum-mode dired-omit-mode)
+  154
+  '(1 nil)
+  t
+  '("/Users/dsaa-temp/.emacs.d/php-auto-yasnippets/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/dsaa-temp/.emacs.d/frame-restore.el"
+  "frame-restore.el"
+  'emacs-lisp-mode
+  '(yas-minor-mode helm-mode ergoemacs-mode linum-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
