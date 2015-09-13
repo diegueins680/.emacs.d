@@ -1,4 +1,11 @@
 ;; Turn off mouse interface early in startup to avoid momentary display
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
@@ -56,13 +63,17 @@
 ;; Install extensions if they're missing
 (defun init--install-packages ()
   (packages-install
-   '(magit
+   '(
+     cider
+     circe
+     magit
      paredit
      move-text
      gist
      htmlize
      visual-regexp
      markdown-mode
+     ergoemacs-mode
      fill-column-indicator
      flycheck
      flycheck-pos-tip
@@ -88,9 +99,9 @@
      clojure-mode-extra-font-locking
      groovy-mode
      prodigy
-     cider
      yesql-ghosts
      string-edit
+     zenburn-theme
      )))
 
 (condition-case nil
@@ -222,6 +233,13 @@
 (require 'server)
 (unless (server-running-p)
   (server-start))
+
+;; Keep emacs Custom keybindings in separate file
+(setenv "ERGOEMACS_KEYBOARD_LAYOUT" "dv") ; US Dvorak (Ergonomic)
+(load "~/.emacs.d/ergoemacs-keybindings-5.3.9/ergoemacs-mode")
+;;(load "~/.emacs.d/keybindings.el")
+(ergoemacs-mode)
+(load "~/.emacs.d/customKeybindings.el")
 
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)

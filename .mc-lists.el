@@ -162,6 +162,7 @@
         touch-buffer-file
         transpose-params
         transpose-sexps
+        undo-tree-visualize
         wdired-next-line
         wdired-previous-line
         wrap-region-trigger
