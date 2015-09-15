@@ -21,7 +21,6 @@
 (global-set-key (kbd "C-v")          'scroll-down-command)
 (global-set-key (kbd "C-x p")        'package-list-packages)
 (global-set-key (kbd "C-M-d")        'dired)
-;;(global-set-key (kbd "M-m")          'magit-status)
 (global-set-key (kbd "M-f")          'turn-window-into-frame)
 (global-set-key (kbd "C-^")          'ddliu-emms-player-mplayer-volume-up)
 (global-set-key (kbd "C-6")          'ddliu-emms-player-mplayer-volume-down)
@@ -37,3 +36,4 @@
 (global-set-key (kbd "C-c u")        'uncomment-region)
 (global-set-key (kbd "C-x k")        'kill-this-buffer)
 ;;(define-key php-mode-map (kbd "C-c C-y") 'yas/create-php-snippet)
+

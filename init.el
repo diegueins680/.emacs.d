@@ -73,6 +73,7 @@
      htmlize
      visual-regexp
      markdown-mode
+     emms
      ergoemacs-mode
      fill-column-indicator
      flycheck
@@ -249,3 +250,34 @@
 ;; Conclude init by setting up specifics for the current user
 (when (file-exists-p user-settings-dir)
   (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
+
+'(emms-player-mplayer-parameters (quote ("-slave")))
+'(emms-player-mplayer-playlist-parameters
+  (quote
+   ("-slave" "-quiet" "-really-quiet" "-playlist" "-ao jack")))
+
+(require 'emms-setup)
+(require 'emms-streams)
+
+(emms-all)
+(emms-streams)
+(setq emms-player-mplayer-command-name "mplayer"
+      emms-player-mplayer-parameters '("-slave")
+      emms-player-mpg321-command-name "mpg123"
+      emms-player-list
+      '(emms-player-mplayer
+        emms-player-mplayer-playlist
+        emms-player-mpg321
+        emms-player-ogg123))
+(defun ddliu-emms-player-mplayer-volume-up ()
+  ;;"Depends on mplayer’s -slave mode."
+  (interactive)
+  (process-send-string
+   emms-player-simple-process-name "volume 1\n"))
+
+
+(defun ddliu-emms-player-mplayer-volume-down ()
+  ;;"Depends on mplayer’s -slave mode."
+  (interactive)
+  (process-send-string
+   emms-player-simple-process-name "volume -1\n"))
