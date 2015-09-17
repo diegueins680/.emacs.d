@@ -66,42 +66,43 @@
    '(
      cider
      circe
-     magit
-     paredit
-     move-text
-     gist
-     htmlize
-     visual-regexp
-     markdown-mode
-     emms
-     ergoemacs-mode
-     fill-column-indicator
-     flycheck
-     flycheck-pos-tip
-     flycheck-clojure
-     flx
-     f
-     flx-ido
-     dired-details
-     css-eldoc
-     yasnippet
-     smartparens
-     ido-vertical-mode
-     ido-at-point
-     simple-httpd
-     guide-key
-     nodejs-repl
-     restclient
-     highlight-escape-sequences
-     whitespace-cleanup-mode
-     elisp-slime-nav
-     dockerfile-mode
      clojure-mode
      clojure-mode-extra-font-locking
+     css-eldoc
+     dired-details
+     dired-toggle-sudo
+     dockerfile-mode
+     elisp-slime-nav
+     emms
+     ergoemacs-mode
+     f
+     fill-column-indicator
+     flx
+     flx-ido
+     flycheck
+     flycheck-clojure
+     flycheck-pos-tip
+     gist
      groovy-mode
+     guide-key
+     highlight-escape-sequences
+     htmlize
+     ido-at-point
+     ido-vertical-mode
+     magit
+     markdown-mode
+     move-text
+     nodejs-repl
+     paredit
      prodigy
-     yesql-ghosts
+     restclient
+     simple-httpd
+     smartparens
      string-edit
+     visual-regexp
+     whitespace-cleanup-mode
+     yasnippet
+     yesql-ghosts
      zenburn-theme
      )))
 
