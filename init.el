@@ -95,6 +95,7 @@
      nodejs-repl
      paredit
      prodigy
+     projectile
      restclient
      simple-httpd
      smartparens
