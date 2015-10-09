@@ -85,6 +85,7 @@
      gist
      groovy-mode
      guide-key
+     haskell-mode
      highlight-escape-sequences
      htmlize
      ido-at-point
