@@ -64,6 +64,7 @@
 (defun init--install-packages ()
   (packages-install
    '(
+     android-mode
      cider
      circe
      clojure-mode
@@ -244,6 +245,9 @@
 ;;(load "~/.emacs.d/keybindings.el")
 (ergoemacs-mode)
 (load "~/.emacs.d/customKeybindings.el")
+
+(smartparens-mode)
+(global-linum-mode t)
 
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
