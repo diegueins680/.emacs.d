@@ -18,3 +18,4 @@ site-lisp/adventur-mode
 /ensime/
 /*.el#
 /history
+custom.el
