@@ -70,6 +70,7 @@
      clojure-mode
      clojure-mode-extra-font-locking
      css-eldoc
+     dired+
      dired-details
      dired-toggle-sudo
      dockerfile-mode
@@ -87,6 +88,7 @@
      groovy-mode
      guide-key
      haskell-mode
+     helm-projectile
      highlight-escape-sequences
      htmlize
      ido-at-point
@@ -248,6 +250,11 @@
 
 (smartparens-mode)
 (global-linum-mode t)
+(set-face-attribute 'linum nil :height 120)
+
+(projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
 
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
