@@ -64,6 +64,7 @@
 (defun init--install-packages ()
   (packages-install
    '(
+     ac-php
      android-mode
      cider
      circe
@@ -98,6 +99,7 @@
      move-text
      nodejs-repl
      paredit
+     php-mode
      prodigy
      projectile
      restclient
